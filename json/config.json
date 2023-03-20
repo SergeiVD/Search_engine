@@ -1,0 +1,33 @@
+{
+	"config":
+	{
+		"name":"SkillboxSearchEngine",
+		"version":"0.1",
+		"max_responses":5
+	},
+	"files":
+	[
+		"../res/file001.txt",
+		"../res/file002.txt",
+		"../res/file003.txt",
+		"../res/file004.txt",
+		"../res/file005.txt",
+		"../res/file006.txt",
+		"../res/file007.txt",
+		"../res/file008.txt",
+		"../res/file009.txt",
+		"../res/file010.txt",
+		"../res/file011.txt",
+		"../res/file012.txt",
+		"../res/file013.txt",
+		"../res/file014.txt",
+		"../res/file015.txt",
+		"../res/file016.txt",
+		"../res/file017.txt",
+		"../res/file018.txt",
+		"../res/file019.txt",
+		"../res/file020.txt",
+		"../res/file021.txt",
+		"../res/file022.txt"
+	]
+}
