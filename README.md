@@ -14,7 +14,7 @@ else copy download archive.zip
 
 After you copy the repository to your computer, go to the project folder:
 <ol>
-  <li> cd search_engine</li>
+  <li> cd Search_engine</li>
 if the build folder is not created then create it:
   <li> touch build </li>
   <li> cd build</li>
