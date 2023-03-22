@@ -34,7 +34,7 @@ if the build folder is not created then create it:
 </ul>
 
 ### Application working directories
-res - stores text files that are searched for.
+res - stores text files that are searched for.\
 json - contains files:
 - answers.json
 - requests.json
