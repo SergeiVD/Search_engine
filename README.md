@@ -64,9 +64,9 @@ For this application, configuration data will be stored in a file called config.
 </p>
 
 <h4>An example of a config.json file description:</h4>
-	{
-		"config":
-			{
+	{\
+		"config":\
+			{\
 				"name": "SkillboxSearchEngine",
 				"version": "0.1",
 				"max_responses": 5
