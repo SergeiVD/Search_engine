@@ -25,7 +25,7 @@ if the build folder is not created then create it:
 <p>./search_engine</p>
 <p>or by double clicking on the executable file search_engine in the folder build</p>
 
-<p><strong>Compound</strong></p>
+### Compound
 <p>The main application classes are</p>
 <ul>
   <li>ConverterJSON </li>
@@ -34,6 +34,11 @@ if the build folder is not created then create it:
 </ul>
 
 ### Application working directories
+res - stores text files that are searched for.
+json - contains files:
+- answers.json
+- requests.json
+- config.json
 
 <p>Which can be used inside other applications.</p>
 <p>To demonstrate the capabilities of the search engine, an auxiliary class <strong>SearchEngine</strong> was developed which is not part of the application and serves only to demonstrate the capabilities</p>
