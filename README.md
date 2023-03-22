@@ -137,7 +137,7 @@ It contains requests that the search engine needs to process. An example of a re
                                            "1", 0.897,
                                            "2", 0.750,
                                            "3", 0.670,
-                                           "4" : 0.561
+                                           "4", 0.561
                                         }
                           },
              "request002": 
