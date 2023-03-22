@@ -164,28 +164,33 @@ It contains requests that the search engine needs to process. An example of a re
 {
   "requests":
               [
-                 "some words..", for this string the request id will be "request001"</p>
-                 "some words..", for this string the request id will be "request002"</p>
-                 "some words..", for this string the request id will be "request003"</p>
-                 "some words..", for this string the request id will be "request004"</p>
+                 "some words..", for this string the request id will be "request001"
+                 "some words..", for this string the request id will be "request002"
+                 "some words..", for this string the request id will be "request003"
+                 "some words..", for this string the request id will be "request004"
                  ...
               ]
 }
 ```
 
-
-
 <li>result – query search result. If it evaluates to true, then at least one document was found for the submitted query. If the result is false, then no documents were found. Then there are no other fields in the response to this request.</li>
 <li>relevance is included in the answers.json file if more than one document was found for this query. The following matches the response rating and the name of the id of the document being searched:</li>
 <li><Document ID>("docid") — ID of the document in which the response to the query was found. It is generated automatically when indexing all documents based on the order in which the documents are located in the files field in the config.json file.
 For example, if in the config.json field, the files field contains:
-  <p>"files":</p>
-           <p>["../resources/file001.txt", for this file docid will be equal to 0</p>
-            <p>"../resources/file002.txt", for this file docid will be equal to 1</p>
-            <p>"../resources/file003.txt", for this file docid will be equal to 2</p>
-            <p>"../resources/file004.txt", for this file docid will be equal to 3</p>
-            <p> ...</p>
-            <p>]</p>
+	
+```
+{
+  "files":
+          [
+	    "../resources/file001.txt", for this file docid will be equal to 0
+            "../resources/file002.txt", for this file docid will be equal to 1
+            "../resources/file003.txt", for this file docid will be equal to 2
+            "../resources/file004.txt", for this file docid will be equal to 3
+            ...</p>
+          ]
+}
+```
+
 </li>
 <li><answer rank>(“rank”) — rank or search rating. This number indicates how good the document is for a given query. In the response, document id's are arranged in order of decreasing search ranking.</li>
 </ul>
