@@ -64,8 +64,7 @@ For this application, configuration data will be stored in a file called config.
 </p>
 
 <h4>An example of a config.json file description:</h4>
-'''
-{
+'''{
   "config":
 	  {
          "name": "SkillboxSearchEngine",</p>
@@ -80,9 +79,7 @@ For this application, configuration data will be stored in a file called config.
              "../resources/file004.txt",
              ...
           ]
- }
-
-  '''
+ }'''
 
 <h3>Let's take a closer look at each field of the config.json file</h3>
 <ul>
