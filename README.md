@@ -33,6 +33,9 @@ if the build folder is not created then create it:
   <li>SearchServer </li>
 </ul>
 
+<p>Which can be used inside other applications.</p>
+<p>To demonstrate the capabilities of the search engine, an auxiliary class <strong>SearchEngine</strong> was developed which is not part of the application and serves only to demonstrate the capabilities</p>
+
 ### Application working directories
 res - stores text files that are searched for.\
 json - contains files:
@@ -40,8 +43,7 @@ json - contains files:
 - requests.json
 - config.json
 
-<p>Which can be used inside other applications.</p>
-<p>To demonstrate the capabilities of the search engine, an auxiliary class <strong>SearchEngine</strong> was developed which is not part of the application and serves only to demonstrate the capabilities</p>
+A detailed description of these files will be given below.
 
 <h3>Application health check</h3>
 <p>After launching the application, you will be offered three options for the application:</p>
