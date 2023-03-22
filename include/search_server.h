@@ -1,7 +1,7 @@
 #ifndef SEARCH_SERVER_H
 #define SEARCH_SERVER_H
 
-#include <iostream>
+
 #include <string>
 #include <vector>
 
@@ -24,44 +24,44 @@ class SearchServer
 public:
 
 	/**
-	 * @param idx в конструктор класса передается ссылка на класс Invertedindex
-	 * чтобы Searchserver мог узнать частоту слов встречаемых в запросе
+	 * @param idx a reference to the Invertedindex class is passed to the class constructor
+	 * so that Searchserver can find out the frequency of words found in the query
 	 */
     SearchServer(InvertedIndex& idx) : _index(idx) {};
 	
     virtual ~SearchServer() = default;
 
     /**
-	 * Метод обработки поисковых запросов
-	 * @param queries_input поисковые запросы взятые из файлаrequests.json
-	 * @return возвращает отсортированный список релевантных ответов для заданных запросов
+	 * Search query processing method
+	 * @param queries_input search queries taken from the requests.json file
+	 * @return returns a sorted list of relevant responses for given queries
 	 */
 	std::vector<std::vector<RelativeIndex>> search(const std::vector<std::string>& queries_input);
 
 	/**
-	 * Метод установки максимального колличества ответов на один запросе
+	 * Method for setting the maximum number of responses per request
 	 */
 	void SetMaxResponses(const int& max_responses);
 
 private:
   /**
-   * Внутренний метод получения уникальных слов запроса
-   * @param queri - поисковый запрос
-   * return - список уникальных слов запроса
+   * Internal method for getting unique query words
+   * @param queri - search query
+   * return - list of unique query words
    */
 	std::vector<std::string> unique_queri_words(const std::string& queri);
 
 	/**
-	 * Внутренний метод расчета релевантности запроса
-	 * @param entries - список инвертированных индексов слов поискового запроса
-	 * @return - список релевантности запроса
+	 * Internal Method for Calculating Query Relevance
+	 * @param entries - list of inverted indices of search query words
+	 * @return - query relevance list
 	 */
 	std::vector<RelativeIndex> compute_relative(const std::vector<Entry>& entries);
 
-	/** Максимальное колличество ответов на поисковые запросы*/
+	/** Maximum number of responses to search queries*/
 	unsigned int _max_responses{5};
 
-	/** Инвертированный индекс*/
+	/** Inverted Index*/
 	InvertedIndex _index;
 
 };

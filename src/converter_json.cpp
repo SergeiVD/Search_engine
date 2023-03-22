@@ -1,23 +1,17 @@
 #include "../include/converter_json.h"
-
 #include "../include/search_server.h"
 
 #include <fstream>
 #include <iomanip>
-#include <ios>
 #include <sstream>
-#include <nlohmann/json_fwd.hpp>
-#include <iostream>
 #include <stdexcept>
-#include <string>
-#include <vector>
+#include <iostream>
 
 ConverterJSON::~ConverterJSON() {}
 
 std::vector<std::string> ConverterJSON::GetTextDocuments()
 {
 	nlohmann::json data = load_config(m_valid_key);
-	// std::cout<<data.dump(4)<<std::endl;
 
 	std::vector<std::string> vec_text_docum;
 	

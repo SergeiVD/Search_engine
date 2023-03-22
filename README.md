@@ -63,27 +63,28 @@ For this application, configuration data will be stored in a file called config.
 <p>Without it, the application cannot be launched. It contains the name of the search engine, its version, the database update time (with what frequency it is necessary to re-index the database, re-upload files and calculate their search rating), the maximum number of options in the answer (if not specified, then the value is chosen equal to five).
 </p>
 
-An example of a config.json file description:
-<p>{</p>
-  <p>"config":</p>
-              <p>{</p>
-                 <p>"name": "SkillboxSearchEngine",</p>
-                 <p>"version": "0.1",</p>
-                 <p>"max_responses": 5</p>
-              <p>},</p>
-              <p>"files":</p>
-                       <p>[</p>
-                           <p>"../resources/file001.txt",</p>
-                           <p>"../resources/file002.txt",</p>
-                           <p>"../resources/file003.txt",</p>
-                           <p>"../resources/file004.txt",</p>
-                           <p>...</p>
-                       <p>]</p>
-  <p>}</p>
-  </p>
-  
-  <p>
-Let's take a closer look at each field of the config.json file
+<h4>An example of a config.json file description:</h4>
+'''
+{
+  "config":
+	  {
+         "name": "SkillboxSearchEngine",</p>
+         "version": "0.1",</p>
+         "max_responses": 5</p>
+	  },
+      "files":
+		  [
+             "../resources/file001.txt",
+             "../resources/file002.txt",
+             "../resources/file003.txt",
+             "../resources/file004.txt",
+             ...
+          ]
+ }
+
+  '''
+
+<h3>Let's take a closer look at each field of the config.json file</h3>
 <ul>
  <li>config—general information, without which the application will not start. If this field is absent, then at startup the program should throw an exception and display the error config file is empty in the text console. If the config.json file itself is missing, then you must throw an exception and display the error configfile is missing.
  </li>

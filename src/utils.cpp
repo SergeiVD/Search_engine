@@ -1,6 +1,10 @@
 #include "../include/utils.h"
 #include <cstddef>
 #include <thread>
+#include <iostream>
+#include <sstream>
+#include <stdexcept>
+
 
 namespace utils
 {	
@@ -16,11 +20,11 @@ namespace utils
 		{
 			while (std::ispunct(word.back()))
 			{
-				// Удаляем знаки препинания в конце слова
+				// Remove punctuation at the end of a word
 				word.pop_back();
 			}
 		
-			// Удаляем знаки препинания в начале слова
+			// Remove punctuation at the beginning of a word
 			while (!word.empty() && std::ispunct(word.front()))
 			{
 				word.erase(0,1);
@@ -42,11 +46,11 @@ namespace utils
 		{
 			while (std::ispunct(word.back()))
 			{
-				// Удаляем знаки препинания в конце слова
+				// Remove punctuation at the end of a word
 				t_word.pop_back();
 			}
-		
-			// Удаляем знаки препинания в начале слова
+
+			// Remove punctuation at the end of a word
 			while (!word.empty() && std::ispunct(word.front()))
 			{
 				t_word.erase(0,1);
@@ -56,8 +60,6 @@ namespace utils
 		}
 		return count;
 	}
-
-
 
 }    // end utils
 

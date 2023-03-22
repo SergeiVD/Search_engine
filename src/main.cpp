@@ -6,7 +6,6 @@
 #include <system_error>
 #include <vector>
 
-// #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
 #include "../google_tests/inverted_index_tests.h"

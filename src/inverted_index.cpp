@@ -1,18 +1,8 @@
 #include "../include/inverted_index.h"
 
 #include <iostream>
-#include <iterator>
 #include <mutex>
-
-#include <stdexcept>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <cctype>
-
 #include <thread>
-#include <future>
-#include <algorithm>
 
 
 InvertedIndex::InvertedIndex()

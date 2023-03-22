@@ -1,30 +1,22 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-#include <cstddef>
-#include <stdexcept>
 #include <vector>
 #include <string>
-#include <sstream>
-
-#include <thread>
-#include <iostream>
 
 namespace utils
 {
 	/**
-	 * Функция разделения строки на отдельные слова
-	 * @param input_docs строка содержащая текст документа
-	 * @return std::vector<std::string> - вектор отдельных слов
+	 * Function to split a string into separate words
+	 * @param input_docs a string containing the text of the document
+	 * @return std::vector<std::string> - isolated word vector
 	 */
-
 	std::vector<std::string> doc_to_word(const std::string& input_doc);
 
 	/**
-	 * Вспомогательная функция для подсчета колличества слов встречающихся в тексте
-	 * @return - колличество совпадений слова word в тексте text    
+	 * Helper function for counting the number of words found in a text
+	 * @return - number of matches of the word word in the text text
 	 */
-
 	size_t word_counter(const std::string& text, const std::string& word);
 
 }

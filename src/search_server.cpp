@@ -1,10 +1,7 @@
 #include "../include/search_server.h"
 
+#include <iostream>
 #include <numeric>
-#include <string>
-#include <utility>
-#include <vector>
-#include <map>
 #include <set>
 #include <algorithm>
 
@@ -125,93 +122,3 @@ std::vector<RelativeIndex> SearchServer::compute_relative(const std::vector<Entr
 
 	return relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// std::vector<std::vector<std::string>> SearchServer::requests_result(const std::vector<std::string>& queri_input)
-// {
-// 	std::vector<std::vector<std::string>> requests(queri_input.size());
-
-// 	for (size_t i = 0; i < queri_input.size(); ++i)
-// 	{
-// 		std::vector<std::string> u_queri_words{unique_queri_words(queri_input.at(i))};
-		
-// 		for(const auto& word : u_queri_words)
-// 		{		
-// 			for(auto& entry : _index.GetWordCount(word))
-// 			{
-// 				requests.at(i).push_back(word);
-// 			}								
-// 		}
-// 	}
-// 	return requests;
-// }
-
-
-
-// std::map<std::string, std::vector<Entry>> frequnecy;
-
-
-// std::vector<std::vector<std::string>> requests(requests_result(queries_input));
-
-
-	// requests = requests_result(queries_input);
-	
-	// for(auto& result : queri_results)
-	// {
-	// 	std::sort(result.begin(),result.end(),[](const Entry& l_entry, const Entry& r_entry)
-	// 		{
-	// 			return l_entry.count > r_entry.count;
-	// 		});
-	// }
-
-	
-	// for(size_t i = 0; i < requests.size(); ++i)
-	// {
-	// 	for (size_t j = 0; j < requests.at(i).size(); ++j)
-	// 	{
-	// 		frequnecy.insert({requests.at(i).at(j), _index.GetWordCount(requests.at(i).at(j))});
-	// 	}
-
-	// }
-	
-	// for(const auto& element : frequnecy)
-	// {
-	// 	std::cout<<element.first<<":"<<std::endl;
-	// 	for(const auto& elem : element.second)
-	// 	{
-	// 		std::cout<<elem.doc_id<<" : "<<elem.count<<std::endl;
-	// 	}
-	// }
-
-	// for(size_t i = 0; i < queri_results.size(); ++i)
-	// {
-		// for (size_t j = 0; j < queri_results.at(i).size(); ++j)
-		// {
-			// if(queri_results.at(i).empty())
-			// {
-			// 	std::cout<<"false"<<std::endl;
-			// 	// continue;
-			// }
-			// std::cout<<"request "<<i<<" word: "<<requests.at(i).at(j)<<" doc_id: "<<queri_results.at(i).at(j).doc_id<<" count: " <<queri_results.at(i).at(j).count<<std::endl;
-			// std::cout<<"request "<<i<<" doc_id: "<<queri_results.at(i).at(j).doc_id<<" count: " <<queri_results.at(i).at(j).count<<std::endl;
-		// }
-
-	// }
-
-
