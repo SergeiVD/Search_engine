@@ -99,6 +99,7 @@ For this application, configuration data will be stored in a file called config.
   
 <p><strong>File with requests requests.json</strong></p>
 It contains requests that the search engine needs to process. An example of a requests.json file description:
+
 ```
 {
      "requests":
