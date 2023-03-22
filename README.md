@@ -156,17 +156,25 @@ It contains requests that the search engine needs to process. An example of a re
 <ul>
   <p>Consider each field of the answers.json file:</p>
   <li>answers is the base field in this file that contains responses to queries.</li>
-<li>request001 ... 003 — ID of the request on which the response was generated. The request ID is generated automatically in the order in which the requests are in the requests field of the requests.json file.
-  <p>For example:</p>
-  <p>"requests":</p>
-  <p>                  [</p>
-  <p>                      "some words..", for this string the request id will be "request001"</p>
-  <p>"some words..", for this string the request id will be "request002"</p>
-  <p>"some words..", for this string the request id will be "request003"</p>
-  <p>"some words..", for this string the request id will be "request004"</p>
-  <p>...</p>
-  <p>]</p>
-</li>
+<li>request001 ... 003 — ID of the request on which the response was generated. The request ID is generated automatically in the order in which the requests are in the requests field of the requests.json file.</li>
+	
+ <p>For example:</p>
+	
+```
+{
+  "requests":
+              [
+                 "some words..", for this string the request id will be "request001"</p>
+                 "some words..", for this string the request id will be "request002"</p>
+                 "some words..", for this string the request id will be "request003"</p>
+                 "some words..", for this string the request id will be "request004"</p>
+                 ...
+              ]
+}
+```
+
+
+
 <li>result – query search result. If it evaluates to true, then at least one document was found for the submitted query. If the result is false, then no documents were found. Then there are no other fields in the response to this request.</li>
 <li>relevance is included in the answers.json file if more than one document was found for this query. The following matches the response rating and the name of the id of the document being searched:</li>
 <li><Document ID>("docid") — ID of the document in which the response to the query was found. It is generated automatically when indexing all documents based on the order in which the documents are located in the files field in the config.json file.
