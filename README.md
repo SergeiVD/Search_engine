@@ -64,9 +64,10 @@ For this application, configuration data will be stored in a file called config.
 </p>
 
 <h4>An example of a config.json file description:</h4>
-	{\
-		"config":\
-			{\
+```
+{
+	"config":
+			{
 				"name": "SkillboxSearchEngine",
 				"version": "0.1",
 				"max_responses": 5
@@ -80,7 +81,7 @@ For this application, configuration data will be stored in a file called config.
 					...
 				]
 	}
-
+```
 <h3>Let's take a closer look at each field of the config.json file</h3>
 <ul>
  <li>config—general information, without which the application will not start. If this field is absent, then at startup the program should throw an exception and display the error config file is empty in the text console. If the config.json file itself is missing, then you must throw an exception and display the error configfile is missing.
