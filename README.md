@@ -67,12 +67,12 @@ For this application, configuration data will be stored in a file called config.
 </ol>
 
 
-<p><strong>Configuration file config.json.</strong></p>
+### Configuration file config.json.
 
 <p>Without it, the application cannot be launched. It contains the name of the search engine, its version, the database update time (with what frequency it is necessary to re-index the database, re-upload files and calculate their search rating), the maximum number of options in the answer (if not specified, then the value is chosen equal to five).
 </p>
 
-<h4>An example of a config.json file description:</h4>
+#### An example of a config.json file description:
 
 ```
 {
@@ -93,7 +93,7 @@ For this application, configuration data will be stored in a file called config.
 }
 ```
 
-<h3>Let's take a closer look at each field of the config.json file</h3>
+### Let's take a closer look at each field of the config.json file
 <ul>
  <li>config—general information, without which the application will not start. If this field is absent, then at startup the program should throw an exception and display the error config file is empty in the text console. If the config.json file itself is missing, then you must throw an exception and display the error configfile is missing.
  </li>
@@ -106,7 +106,7 @@ For this application, configuration data will be stored in a file called config.
 </ul>
   </p>
   
-<p><strong>File with requests requests.json</strong></p>
+### File with requests requests.json
 It contains requests that the search engine needs to process. An example of a requests.json file description:
 
 ```
@@ -128,7 +128,7 @@ It contains requests that the search engine needs to process. An example of a re
 <li><query content>(“some words”) — search query, a set of words separated by one or more spaces. They need to be searched. All words are composed of lowercase Latin letters.</li>
   </ul>
 
-<p><strong>The file with responses to requests answers.json.</strong></p>
+### The file with responses to requests answers.json.
 <p>It records the results of the search engine. If this file does not exist in the directory with the project when starting the application, then it must be created. If the file already exists, then it is necessary to delete all its contents.</p>
 
 <p>An example of a description of the answers.json file:</p>
