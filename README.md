@@ -99,16 +99,18 @@ For this application, configuration data will be stored in a file called config.
   
 <p><strong>File with requests requests.json</strong></p>
 It contains requests that the search engine needs to process. An example of a requests.json file description:
-<p>{</p>
-     <p>"requests": </p>
-                  <p>[</p>
-                       <p>"some words..",</p>
-                       <p>"some words..",</p>
-                       <p>"some words..",</p>
-                       <p>"some words..",</p>
-                       <p>...</p>
-                      <p>]</p>
-     <p>}</p>
+```
+{
+     "requests":
+                [
+                  "some words..",
+                  "some words..",
+                  "some words..",
+                  "some words..",
+                  ...
+                ]
+ }
+ ```
      
  <p>Let's analyze each field of the config.json file in more detail</p>
  <ul>
