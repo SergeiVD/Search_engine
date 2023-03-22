@@ -64,22 +64,22 @@ For this application, configuration data will be stored in a file called config.
 </p>
 
 <h4>An example of a config.json file description:</h4>
-'''{
-  "config":
-	  {
-         "name": "SkillboxSearchEngine",</p>
-         "version": "0.1",</p>
-         "max_responses": 5</p>
-	  },
-      "files":
-		  [
-             "../resources/file001.txt",
-             "../resources/file002.txt",
-             "../resources/file003.txt",
-             "../resources/file004.txt",
-             ...
-          ]
- }'''
+	{
+		"config":
+			{
+				"name": "SkillboxSearchEngine",
+				"version": "0.1",
+				"max_responses": 5
+			},
+			"files":
+				[
+					"../resources/file001.txt",
+					"../resources/file002.txt",
+					"../resources/file003.txt",
+					"../resources/file004.txt",
+					...
+				]
+	}
 
 <h3>Let's take a closer look at each field of the config.json file</h3>
 <ul>
