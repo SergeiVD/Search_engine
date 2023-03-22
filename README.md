@@ -124,33 +124,34 @@ It contains requests that the search engine needs to process. An example of a re
 
 <p>An example of a description of the answers.json file:</p>
 
-<p>{</p>
-<p>"answers": </p>
-<p>{"request001": {</p>
-<p>"result": </p>
-<p>"true",</p>
-<p>"relevance":</p> 
-<p>{"docid": 0, </p>
-<p>“rank” : 0.989,</p>
-<p>"docid": 1, </p>
-<p>“rank” : 0.897,</p>
-<p>"docid": 2, </p>
-<p>“rank” : 0.750,</p>
-<p>"docid": 3,</p>
-<p>“rank” : 0.670,</p>
-<p>"docid": 4,</p>
-<p>“rank” : 0.561</p>
-<p>}</p>
-<p>},</p>
-<p>"request002": </p>
-<p>{"result": "true",</p>
-<p>"docid": 0, </p>
-<p>“rank” : 0.769</p>
-<p>},</p>
-<p>"request003": </p>
-<p>{"result": "false"}</p>
-<p>}</p>
-<p>}</p>
+```
+{
+   "answers": 
+            {
+	      "request001": 
+	                  {
+                             "result": "true",
+                             "relevance": 
+                                        {
+					   "0", 0.989, // "docid": 0, “rank” : 0.989,
+                                           "1", 0.897,
+                                           "2", 0.750,
+                                           "3", 0.670,
+                                           "4" : 0.561
+                                        }
+                          },
+             "request002": 
+                         {
+			    "result": "true",
+                            "0“, 0.769
+                         },
+             "request003":
+                         {
+			    "result": "false"
+			 }
+            }
+}
+```
 
 <ul>
   <p>Consider each field of the answers.json file:</p>
