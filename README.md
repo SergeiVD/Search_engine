@@ -14,16 +14,16 @@ else copy download archive.zip
 
 After you copy the repository to your computer, go to the project folder:
 <ol>
-  <li> cd search_engine</li>
+  <li> cd Search_engine</li>
 if the build folder is not created then create it:
   <li> touch build </li>
   <li> cd build</li>
   <li> cmake ..</li>
   <li> cmake --build .</li>
 </ol>
-The project is launched by the team:
-./search_engine
-or by double clicking on the executable file search_engine in the folder build
+<p>The project is launched by the team:</p>
+<p>./search_engine</p>
+<p>or by double clicking on the executable file search_engine in the folder build</p>
 
 <p><strong>Compound</strong></p>
 <p>The main application classes are</p>
