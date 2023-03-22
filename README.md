@@ -33,6 +33,8 @@ if the build folder is not created then create it:
   <li>SearchServer </li>
 </ul>
 
+###Application working directories
+
 <p>Which can be used inside other applications.</p>
 <p>To demonstrate the capabilities of the search engine, an auxiliary class <strong>SearchEngine</strong> was developed which is not part of the application and serves only to demonstrate the capabilities</p>
 
